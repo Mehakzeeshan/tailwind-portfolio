@@ -2,7 +2,7 @@
 import React, {useTransition, useState} from 'react'
 import Image from "next/image";
 import TabButtons from './tabButtons';
-import { title } from 'process';
+
 
 const TAB_DATA = [
     {
@@ -56,9 +56,9 @@ const TAB_DATA = [
 
 const AboutSection = () => {
     const [tab, setTab] = useState("skills");
-    const [isPending, startTransition] = useTransition();
+    const [isPending, startTransition] = useTransition();  // eslint-disable-line
 
-    const handleTabChange = (id: any) => {
+    const handleTabChange = (id: string) => {
         startTransition(() => {
             setTab(id);
         });
@@ -70,20 +70,20 @@ const AboutSection = () => {
           <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
             <h2 className='text-4xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-900 text-center'><br/>About Me</h2>
             <p className='text-base lg:text-lg'>
-               Hi, I'm Mehak Noor Mohammad, a passionate web designer and aspiring full-stack web developer. 
+               Hi, I`&apos;`m Mehak Noor Mohammad, a passionate web designer and aspiring full-stack web developer. 
                My focus lies in crafting clean, intuitive, and user-friendly web applications that provide 
                seamless user experiences. I enjoy the challenge of turning creative ideas into functional 
                and visually appealing websites. With a strong foundation in both front-end and back-end 
-               development, I'm committed to growing my expertise in full-stack development.
+               development, I`&apos;`m committed to growing my expertise in full-stack development.
                </p>
                <p className='text-base lg:text-lg' >
-               Currently, I'm diving deep into the latest advancements in technology, including Web 3.0,
+               Currently, I`&apos;`m diving deep into the latest advancements in technology, including Web 3.0,
                metaverse, cloud computing, and artificial intelligence.As I continue 
                to learn and grow, I aim to bring a balance of creativity and technical skill to every project,
                always pushing myself to innovate and improve.
                </p>
                <p className='text-base lg:text-lg'>
-               Let's connect and explore the future of web development together!
+               Let`&apos;`s connect and explore the future of web development together!
                </p>
                <div className='flex flex-row justify-start mt-8'>
 
@@ -109,4 +109,4 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection
+export default AboutSection;

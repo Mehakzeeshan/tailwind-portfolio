@@ -1,10 +1,11 @@
+
 "use client";
 import Link from "next/link";
 import React, {useState} from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import NavLink from "./navLink";
 import MenuOverlay from "./menuOverlay";
-import { title } from "process";
+
 
 
 const navLinks = [
@@ -14,15 +15,15 @@ const navLinks = [
     },
     {
       title: "About",
-      path: "/about",
+      path: "#about",
     },
     {
       title: "Projects",
-      path: "/projects",
+      path: "#projects",
     },
     {
       title: "Contact",
-      path: "/contact",
+      path: "#contact",
     },
   ];
  

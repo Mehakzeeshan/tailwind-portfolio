@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectTag = ({ name, onClick, isSelected }:any) => {
+const ProjectTag = ({ name, onClick, isSelected }:any) => {  // eslint-disable-line
   const buttonStyles = isSelected
     ? "text-white border-purple-500"
     : "text-[#ADB7BE] border-slate-600 hover:border-white";
